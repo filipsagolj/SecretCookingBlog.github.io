@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SecretCookingBlog</title>
+
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      
+    <style>
+    
+      body {
+        font-family: Arial;
+        margin: 0px;
+      }
+      .header {
+        background-color: #ba4f04;
+        border-bottom: 1px solid red;
+        width: 100%;
+        padding: 10px;
+        float: none;
+        margin: 0px;
+      }
+      .logo{
+        width: 100px;
+        padding-left: 15px;
+      }
+      .text-logo {
+        padding-left: 40px;
+      }
+      .login {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+        border-radius: 4px;
+        border-style: solid;
+        border-width: 1px;
+        width: 80px;
+        height: 40px;
+        transition: background-color 0.3s;
+        cursor: pointer;
+      }
+      .login:hover {
+        background-color: white;
+        color: black;
+      }
+      .login:active {
+        opacity: 0.3;
+      }
+      .username {
+        border: 1px solid black;
+        width: 150px;
+        height: 30px;
+      }
+      .password {
+        border: 1px solid black;
+        width: 150px;
+        height: 30px;
+      }
+      .login-blok {
+        margin-top: 25px;
+        margin-right: 100px;
+        float: right;
+      }
+      .nav {
+        display: flex;
+        width: 100%;
+        margin-right: 0px;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      .coolinarka {
+        font-weight: bold;
+        font-size: 15px;
+        width: 200px;
+        height: 50px;
+        border-radius: 0px 0px 25px 25px;
+        border: 1px solid red;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .coolinarka:hover {
+        background-color: red;
+        border: 1px solid black;
+        color: white;
+      }
+      .coolinarka:active {
+        opacity: 0.4;
+      }
+      .podravka {
+        font-weight: bold;
+        font-size: 15px;
+        width: 200px;
+        height: 50px;
+        border-radius: 0px 0px 25px 25px;
+        border: 1px solid red;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .podravka:hover {
+        background-color: red;
+        border: 1px solid black;
+        color: white;
+      }
+      .podravka:active {
+        opacity: 0.4;
+      }
+      .vindija {
+        font-weight: bold;
+        font-size: 15px;
+        width: 200px;
+        height: 50px;
+        border-radius: 0px 0px 25px 25px;
+        border: 1px solid red;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      }
+      .vindija:hover {
+        background-color: red;
+        border: 1px solid black;
+        color: white;
+      }
+      .vindija:active {
+        opacity: 0.4;
+      }
+      .nav:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+      }
+      #sarma-div {
+        margin-top: 40px;
+        margin-left: 25px;
+        margin-bottom: 40px;
+      }
+
+      .sarma-slika {
+        float: left;
+        border: 10px solid #ba4f04;
+        border-radius: 30px;
+        width: 40%;
+        transition: box-shadow 0.3s;
+      }
+      .sarma-slika:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+      }
+      .sarma-slika:active {
+        opacity: 0.3;
+      }
+
+      #sarma-text {
+        float: left;
+        width: 30%;
+        margin-left: 20px;
+      }
+
+      .sarma-bloger {
+        float: right;
+        margin-right: 20px;
+        border: 10px solid gray;
+        border-radius: 125px;
+        width: 20%;
+        transition: box-shadow 0.3s;
+      }
+      .sarma-bloger:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+      }
+      
+      .hrr {
+        margin-top: 400px;
+      }
+
+      footer {
+        width: 100%;
+        height: 100px;
+        background-color: #ba4f04;
+        margin-top: 40px;
+        margin-bottom: 0px;
+       }
+       .kuhar {
+        width: 100px;
+        float: left;
+       }
+       .filip {
+        margin-left: 30px;
+        text-align: center;
+        color: rgb(56, 55, 55);
+        cursor: pointer;
+        display: inline-block;
+       }
+       .filip:hover {
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+       }
+       .filip:active {
+        opacity: 0.3;
+       }
+       @media only screen and (max-width:500px) {
+        .header, .nav, .podravka, .vindija, .coolinarka, .sarma-bloger {
+          width: 100%;
+        }
+       }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+
+      <img class="logo" src="logo.png">
+      <img class="text-logo" src="text.png">
+
+      <div class="login-blok">
+        <input class="username" type="text" placeholder="Username">
+        <input class="password" type="text" placeholder="Password">
+        <button class="login">LOGIN</button>
+      </div>
+      
+    </header>
+
+    <nav class="nav">
+
+      <a href="https://www.coolinarika.com/" target="_blank"><button class="coolinarka">COOLINARKA</button></a>
+      <a href="https://www.podravka.hr/kompanija/o-podravki/trzista/bosna-i-hercegovina/" target="_blank"><button class="podravka">PODRAVKA</button></a>
+      <a href="https://www.vindija.hr/" target="_blank"><button class="vindija">VINDIJA</button></a>
+
+    </nav>
+
+    <div id="sarma-div">
+
+      <a href="https://www.coolinarika.com/recept/blagdanska-sarma-708be38a-7acc-11ed-8b8f-f2d9a5b7a5ee" target="_blank">
+        <img class="sarma-slika" src="sarma.jpg">
+      </a>
+
+      <div id="sarma-text">
+        <p>
+          <h1>SARMA : by Ivan Pažanin</h1>
+          Sarmu često povezujemo uz zimsko doba.<br>
+          Iako mnogi vjerojatno imaju već svoj isprobani recept,<br>
+          otvoreni smo i za nove mogućnosti,<br>
+          jer uz pravi omjer i kombinaciju začina,<br> 
+          jelo će dobiti mirisnu blagdansku notu.
+        </p>
+      </div>
+
+      <a href="https://www.biografija.com/ivan-pazanin/" target="_blank">
+        <img class="sarma-bloger" src="ivan.jpg">
+      </a>
+    </div>
+
+    <hr class="hrr">
+
+    <footer>
+      <img class="kuhar" src="kuhar.png">
+      <a href="mailto:sagoljfilip@gmail.com"><h4 class="filip">&#169; Mostar BiH, Filip Šagolj. All rights reserved</h4></a>
+    </footer>
+
+  </body>
+
+</html>
